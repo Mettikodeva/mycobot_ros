@@ -1,5 +1,8 @@
 <launch>
 
+  <!-- enable this if using WSL -->
+  <env name="LIBGL_ALWAYS_SOFTWARE" value="true" />
+
   <!-- By default, we do not start a database (it can be large) -->
    <!-- 默认情况下，我们不启动数据库（它可能很大） -->
   <arg name="db" default="false" />
